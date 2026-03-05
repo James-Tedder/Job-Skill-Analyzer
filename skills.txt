@@ -1,0 +1,7 @@
+﻿Python
+Java 
+Javascipt
+Git
+HTML
+WebScraping
+C#

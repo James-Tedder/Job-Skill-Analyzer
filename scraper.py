@@ -2,8 +2,8 @@ import requests
 from bs4 import BeautifulSoup
 import csv
 
-
-jobs = [["title","company","skills"]]
+header = ["title","company","skills"]
+jobs = []
 
 
 URL = input("Enter a url (blank to end): ")
@@ -40,5 +40,6 @@ while(URL != ""):
 
 with open("jobs.csv", mode="w", newline="") as csv_file:
     writer = csv.writer(csv_file)
+    writer.writerow(header)
     writer.writerows(jobs)
 
